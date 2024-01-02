@@ -1,11 +1,19 @@
 import { Feature } from "@/types/feature";
+import Image from "next/image";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph } = feature;
+  const { icon, title, paragraph, img } = feature;
   return (
-    <div className="h-64 w-full rounded-md border border-primary p-5 lg:w-1/3">
-      <div className="wow fadeInUp" data-wow-delay=".15s">
-        <div className="flex justify-between gap-5">
+    <div className="relative flex h-[800px] w-full flex-col justify-end pb-28">
+      <div className="fixed left-0 top-0 -z-10 h-full w-full before:absolute before:inset-0 before:h-full before:w-full before:bg-black before:opacity-80 before:content-['']">
+        <Image
+          src={img}
+          alt="Slayt Görsel"
+          className="h-full w-full object-cover object-center"
+        />
+      </div>
+      <div className="ml-10 w-2/4 px-20">
+        <div className="flex items-center justify-between gap-5">
           <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
             {icon}
           </div>
@@ -13,9 +21,14 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             {title}
           </h3>
         </div>
-        <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
+        <p className="text-lg font-medium leading-relaxed text-white">
           {paragraph}
         </p>
+        <div className="mr-20 mt-8 flex items-center justify-end">
+          <button className="rounded-sm bg-primary px-8 py-3 text-lg font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
+            Daha Fazla
+          </button>
+        </div>
       </div>
     </div>
   );

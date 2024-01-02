@@ -1,4 +1,7 @@
 import { Feature } from "@/types/feature";
+import arge from "../../public/images/swiper/arge.jpg";
+import manufacture from "../../public/images/swiper/manufacture.jpg";
+import test from "../../public/images/swiper/test.jpg";
 
 const featuresData: Feature[] = [
   {
@@ -9,9 +12,9 @@ const featuresData: Feature[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="#81df82"
         stroke="#81df82"
-        stroke-width="0.20800000000000002"
+        strokeWidth="0.20800000000000002"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0">
+        <g id="SVGRepo_bgCarrier" strokeWidth="0">
           <rect
             x="-2.08"
             y="-2.08"
@@ -24,8 +27,8 @@ const featuresData: Feature[] = [
         </g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           <path d="M14.5 1h-13l-.5.5v13l.5.5h13l.5-.5v-13l-.5-.5zM14 14H5v-2h2.3c.3.6 1 1 1.7 1 1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2H4v3H2V2h2v2.3c-.6.3-1 1-1 1.7 0 1.1.9 2 2 2s2-.9 2-2h2c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2c-.7 0-1.4.4-1.7 1H6.7c-.3-.6-1-1-1.7-1V2h9v12zm-6-3c0-.6.4-1 1-1s1 .4 1 1-.4 1-1 1-1-.4-1-1zM5 5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm6 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z"></path>
@@ -33,11 +36,12 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "AR-GE",
+    img: arge,
     paragraph:
       "Firmamız PCB TASARIM olarak, uzun yıllara dayanan tasarım ve AR-GE deneyimimizle, bir tasarımın gerçekleştirilmesi veya tasarımdan üretime kadar kapsamlı bir çözüm sunmaktayız.",
   },
   {
-    id: 1,
+    id: 2,
     icon: (
       <svg
         fill="#81df82"
@@ -50,7 +54,7 @@ const featuresData: Feature[] = [
         viewBox="-51.2 -51.2 614.40 614.40"
         xmlSpace="preserve"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0">
+        <g id="SVGRepo_bgCarrier" strokeWidth="0">
           <rect
             x="-51.2"
             y="-51.2"
@@ -63,8 +67,8 @@ const featuresData: Feature[] = [
         </g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
@@ -107,11 +111,12 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "PCB ÜRETİM",
+    img: manufacture,
     paragraph:
       "Standartlara uygun, onaylı malzemelerle birlikte, tek taraftan 30 katlıya kadar olan PCB prototip ve seri üretim taleplerinizi en iyi şekilde karşılıyoruz.",
   },
   {
-    id: 1,
+    id: 3,
     icon: (
       <svg
         fill="#81df82"
@@ -122,7 +127,7 @@ const featuresData: Feature[] = [
         viewBox="-51.2 -51.2 614.40 614.40"
         xmlSpace="preserve"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0">
+        <g id="SVGRepo_bgCarrier" strokeWidth="0">
           <rect
             x="-51.2"
             y="-51.2"
@@ -135,8 +140,8 @@ const featuresData: Feature[] = [
         </g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
@@ -163,6 +168,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "PCB DİZGİ",
+    img: test,
     paragraph:
       "Firmamız, 1600 metrekarelik bir alanda hizmet veren ve ISO 9001:2008 Kalite Standartları belgesine sahip bir kuruluştur. Yaklaşık 70 çalışanımız ile kaliteli hizmet sunmaktayız.",
   },
