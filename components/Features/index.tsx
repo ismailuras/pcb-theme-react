@@ -1,7 +1,11 @@
 "use client";
-import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
+import safety from "../../public/images/icons/safety.png";
+import expert from "../../public/images/icons/expert.png";
+import soluiton from "../../public/images/icons/solution.png";
+import quality from "../../public/images/icons/quality.png";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -11,13 +15,14 @@ import {
   Autoplay,
 } from "swiper/modules";
 import "swiper/css";
+import Image from "next/image";
 
 const Features = () => {
   return (
     <>
       <section id="features" className="pb-16 md:pb-20 lg:pb-28">
-        <div className="container flex flex-col items-center py-24">
-          <h1 className="my-5 text-center text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
+        <div className="container flex flex-col items-center py-28">
+          <h1 className="my-5 border-b border-primary pb-2 text-center text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
             Neden Biz?
           </h1>
           <div className="mb-12 text-center text-base !leading-relaxed text-black sm:text-lg md:text-xl dark:text-body-color-dark">
@@ -28,31 +33,66 @@ const Features = () => {
             müşterilerimizin beklentilerini karşılamak ve aşmak için çaba sarf
             ediyoruz.
           </div>
-          <div className="flex items-center justify-between gap-5">
-            <div className="h-60 w-72 space-y-7 rounded-sm border border-gray-50 p-4">
-              <h1 className="text-2xl font-medium">Uzman Kadro</h1>
-              <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
-                ISO 9001:2008 belgesi ile kalitemizi kanıtlıyoruz.
-              </p>
+          <div className="flex items-center justify-between gap-5 py-10">
+            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+              <Image
+                src={expert}
+                alt="Uzman Kadro"
+                className="rounded-full bg-white p-1"
+              />
+              <div className="space-y-2">
+                <h1 className="text-2xl font-medium">Uzman Kadro</h1>
+                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                  ISO 9001:2008 belgesi ile kalitemizi kanıtlıyoruz.
+                </p>
+              </div>
             </div>
-            <div className="h-60 w-72 space-y-7 rounded-sm border border-gray-50 p-4">
-              <h1 className="text-2xl font-medium">Çözüm Odaklı Yaklaşım</h1>
-              <p>Tasarımdan üretime kadar kapsamlı çözümler sunuyoruz.</p>
+            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+              <Image
+                src={soluiton}
+                alt="Çözüm Odaklı"
+                className="rounded-full bg-white p-1"
+              />
+              <div className="space-y-2">
+                <h1 className="text-2xl font-medium">Çözüm Odaklı Yaklaşım</h1>
+                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                  Tasarımdan üretime kadar kapsamlı çözümler sunuyoruz.
+                </p>
+              </div>
             </div>
-            <div className="h-60 w-72 space-y-7 rounded-sm border border-gray-50 p-4">
-              <h1 className="text-2xl font-medium">Kalite Standartları</h1>
-              <p>ISO 9001:2008 belgesi ile kalitemizi kanıtlıyoruz.</p>
+            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+              <Image
+                src={quality}
+                alt="Çözüm Odaklı"
+                className="rounded-full bg-white p-1"
+              />
+              <div className="space-y-2">
+                <h1 className="text-2xl font-medium">Kalite Standartları</h1>
+                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                  ISO 9001:2008 belgesi ile kalitemizi kanıtlıyoruz.
+                </p>
+              </div>
             </div>
-            <div className="h-60 w-72 space-y-7 rounded-sm border border-gray-50 p-4">
-              <h1 className="text-2xl font-medium">
-                Hızlı ve Güvenilir Üretim
-              </h1>
-              <p>
-                Standartlara uygun malzemelerle hızlı ve güvenilir PCB üretimi
-                yapıyoruz.
-              </p>
+            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+              <Image
+                src={safety}
+                alt="Hızlı ve Güvenli"
+                className="h-[60px] w-[60px] rounded-full bg-white p-2"
+              />
+              <div className="space-y-2">
+                <h1 className="text-2xl font-medium">
+                  Hızlı ve Güvenilir Üretim
+                </h1>
+                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                  Standartlara uygun malzemelerle hızlı ve güvenilir PCB üretimi
+                  yapıyoruz.
+                </p>
+              </div>
             </div>
           </div>
+          <h1 className="-mb-20 border-b border-primary pb-2 pt-20 text-center text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
+            Neler Yapıyoruz?
+          </h1>
         </div>
         <Swiper
           modules={[Pagination, Autoplay]}

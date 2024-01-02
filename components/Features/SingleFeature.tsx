@@ -4,7 +4,7 @@ import Image from "next/image";
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph, img } = feature;
   return (
-    <div className="relative flex h-[800px] w-full flex-col justify-end pb-28">
+    <div className="relative flex min-h-[700px] w-full flex-col justify-center pb-28">
       <div className="fixed left-0 top-0 -z-10 h-full w-full before:absolute before:inset-0 before:h-full before:w-full before:bg-black before:opacity-80 before:content-['']">
         <Image
           src={img}
@@ -12,7 +12,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           className="h-full w-full object-cover object-center"
         />
       </div>
-      <div className="ml-10 w-2/4 px-20">
+      <div className="ml-10 w-2/4 px-20 pt-16">
         <div className="flex items-center justify-between gap-5">
           <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
             {icon}
