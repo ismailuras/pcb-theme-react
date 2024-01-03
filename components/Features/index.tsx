@@ -101,7 +101,7 @@ const Features = () => {
           slidesPerView={1}
           speed={1300}
           loop={true}
-          autoplay={{ delay: 40000, disableOnInteraction: false }}
+          autoplay={{ delay: 4000 }}
           pagination={{ clickable: true }}
         >
           <div className="flex items-center justify-between gap-5">
