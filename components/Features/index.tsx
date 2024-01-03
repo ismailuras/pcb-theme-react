@@ -20,8 +20,8 @@ import Image from "next/image";
 const Features = () => {
   return (
     <>
-      <section id="features" className="pb-16 md:pb-20 lg:pb-28">
-        <div className="container flex flex-col items-center py-28">
+      <section id="features" className="pb-10 md:pb-20 lg:pb-28">
+        <div className="container flex flex-col items-center py-10 md:py-20 lg:py-28">
           <h1 className="my-5 border-b border-primary pb-2 text-center text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
             Neden Biz?
           </h1>
@@ -33,12 +33,12 @@ const Features = () => {
             müşterilerimizin beklentilerini karşılamak ve aşmak için çaba sarf
             ediyoruz.
           </div>
-          <div className="flex items-center justify-between gap-5 py-10">
-            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+          <div className="flex flex-wrap items-center justify-between gap-5 py-10">
+            <div className="h-full w-full space-y-7 rounded-sm p-4 md:h-60 md:w-80">
               <Image
                 src={expert}
                 alt="Uzman Kadro"
-                className="rounded-full bg-white p-1"
+                className="rounded-full bg-white object-cover object-center p-1"
               />
               <div className="space-y-2">
                 <h1 className="text-2xl font-medium">Uzman Kadro</h1>
@@ -47,11 +47,11 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+            <div className="h-full w-full space-y-7 rounded-sm p-4 md:h-60 md:w-80">
               <Image
                 src={soluiton}
                 alt="Çözüm Odaklı"
-                className="rounded-full bg-white p-1"
+                className="rounded-full bg-white object-cover object-center p-1"
               />
               <div className="space-y-2">
                 <h1 className="text-2xl font-medium">Çözüm Odaklı Yaklaşım</h1>
@@ -60,11 +60,11 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+            <div className="h-full w-full space-y-7 rounded-sm p-4 md:h-60 md:w-80">
               <Image
                 src={quality}
                 alt="Çözüm Odaklı"
-                className="rounded-full bg-white p-1"
+                className="rounded-full bg-white object-cover object-center p-1"
               />
               <div className="space-y-2">
                 <h1 className="text-2xl font-medium">Kalite Standartları</h1>
@@ -73,7 +73,7 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div className="h-60 w-80 space-y-7 rounded-sm p-4">
+            <div className="h-full w-full space-y-7 rounded-sm p-4 md:h-60 md:w-80">
               <Image
                 src={safety}
                 alt="Hızlı ve Güvenli"
@@ -90,7 +90,7 @@ const Features = () => {
               </div>
             </div>
           </div>
-          <h1 className="-mb-20 border-b border-primary pb-2 pt-20 text-center text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
+          <h1 className="border-b border-primary pb-2 pt-20 text-center text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight lg:-mb-20 dark:text-white">
             Neler Yapıyoruz?
           </h1>
         </div>
@@ -99,9 +99,9 @@ const Features = () => {
           effect="fade"
           spaceBetween={50}
           slidesPerView={1}
-          speed={1500}
+          speed={1300}
           loop={true}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{ delay: 40000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
         >
           <div className="flex items-center justify-between gap-5">

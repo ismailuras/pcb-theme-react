@@ -1,7 +1,8 @@
 import { Feature } from "@/types/feature";
 import arge from "../../public/images/swiper/arge.jpg";
 import manufacture from "../../public/images/swiper/manufacture.jpg";
-import test from "../../public/images/swiper/test.jpg";
+// import test from "../../public/images/swiper/test.jpg";
+import component from "../../public/images/swiper/component.jpg";
 
 const featuresData: Feature[] = [
   {
@@ -168,7 +169,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "PCB DİZGİ",
-    img: test,
+    img: component,
     paragraph:
       "Firmamız, 1600 metrekarelik bir alanda hizmet veren ve ISO 9001:2008 Kalite Standartları belgesine sahip bir kuruluştur. Yaklaşık 70 çalışanımız ile kaliteli hizmet sunmaktayız.",
   },

@@ -57,3 +57,12 @@
 .swiper-pagination-bullet-active {
   background-color: #fbb040;
 }
+
+@media only screen and (max-width: 570px) {
+  .swiper-pagination {
+    top: 0;
+    right: 20%;
+    margin-top: 20px;
+    flex-direction: row;
+  }
+}
