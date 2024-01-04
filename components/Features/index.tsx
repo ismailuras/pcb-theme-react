@@ -91,7 +91,6 @@ const Features = () => {
         </div>
         <Swiper
           modules={[Pagination, Autoplay]}
-          effect="fade"
           spaceBetween={50}
           slidesPerView={1}
           speed={1300}
