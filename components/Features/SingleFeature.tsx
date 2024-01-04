@@ -10,6 +10,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <Image
           src="/images/swiper/arge.jpg"
           alt="Slayt Görsel"
+          fill
           className="h-full w-full object-cover object-center"
         />
       </div>
