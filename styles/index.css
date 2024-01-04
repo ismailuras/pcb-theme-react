@@ -32,10 +32,6 @@
   }
 }
 
-.swiper-wrapper {
-  box-sizing: border-box;
-}
-
 .swiper-pagination {
   display: flex;
   flex-direction: column;

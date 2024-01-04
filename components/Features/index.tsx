@@ -8,7 +8,7 @@ import quality from "../../public/images/icons/quality.png";
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 
 const Features = () => {
@@ -90,15 +90,15 @@ const Features = () => {
           </h1>
         </div>
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination]}
           slidesPerView={1}
           speed={1300}
           loop={true}
           direction="horizontal"
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 4000,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{ clickable: true }}
         >
           <div className="flex items-center justify-between gap-5">
