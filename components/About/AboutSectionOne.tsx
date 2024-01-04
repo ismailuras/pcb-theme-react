@@ -54,7 +54,7 @@ const AboutSectionOne = () => {
                   src="/images/about/about-hero.jpg"
                   alt="about-image"
                   fill
-                  className="h-full w-full object-contain object-center opacity-70"
+                  className="h-full w-full object-contain object-center dark:opacity-70"
                 />
               </div>
             </div>

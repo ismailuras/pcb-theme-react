@@ -40,7 +40,7 @@ function Services() {
                     yakından tanıtımı
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
-                    <div className="relative aspect-[97/60] w-full opacity-70 sm:aspect-[97/44]">
+                    <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] dark:opacity-70">
                       <Image
                         src="/images/services/arge.jpg"
                         alt="PCB Ar-ge Süreci"
@@ -104,7 +104,7 @@ function Services() {
                     yakından tanıtmak isteriz.
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
-                    <div className="relative aspect-[97/60] w-full opacity-70 sm:aspect-[97/44]">
+                    <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] dark:opacity-70">
                       <Image
                         src="/images/services/pcb-manufacture.jpg"
                         alt="PCB Üretim Aşamaları"

@@ -21,7 +21,7 @@ const ReadyToHelp = () => {
           <Image
             src={img}
             alt="Yardıma Hazırız"
-            className="h-full w-full object-contain object-center opacity-70 xl:w-[60%]"
+            className="h-full w-full object-contain object-center xl:w-[60%] dark:opacity-70"
           />
           <div>
             <h1 className="mb-4 text-xl font-bold !leading-tight text-black sm:text-3xl dark:text-white">
