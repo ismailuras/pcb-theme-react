@@ -97,7 +97,6 @@ const Features = () => {
           speed={1300}
           loop={true}
           direction="horizontal"
-          lazyPreloadPrevNext={1}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
