@@ -1,8 +1,8 @@
 import { Feature } from "@/types/feature";
-import arge from "../../public/images/swiper/arge.jpg";
-import manufacture from "../../public/images/swiper/manufacture.jpg";
-// import test from "../../public/images/swiper/test.jpg";
-import component from "../../public/images/swiper/component.jpg";
+import arge from "/public/images/swiper/arge.jpg";
+import manufacture from "/public/images/swiper/manufacture.jpg";
+// import test from "/public/images/swiper/test.jpg";
+import component from "/public/images/swiper/component.jpg";
 
 const featuresData: Feature[] = [
   {

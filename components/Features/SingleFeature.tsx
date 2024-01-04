@@ -18,7 +18,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
             {icon}
           </div>
-          <h3 className="mb-5 flex-1 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
+          <h3 className="mb-5 flex-1 text-xl font-bold text-white sm:text-2xl lg:text-xl xl:text-2xl">
             {title}
           </h3>
         </div>
@@ -27,7 +27,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         </p>
         <div className="mr-20 mt-8 flex items-center justify-center sm:justify-end">
           <Link
-            href="#_"
+            href="/services"
             className="group relative inline-flex items-center justify-start overflow-hidden rounded-sm bg-primary px-5 py-2 font-medium transition-all sm:px-8 sm:py-4"
           >
             <span className="absolute bottom-0 left-0 mb-12 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-emerald-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>

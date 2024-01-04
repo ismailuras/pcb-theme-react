@@ -21,19 +21,19 @@ const ReadyToHelp = () => {
           <Image
             src={img}
             alt="Yardıma Hazırız"
-            className="h-full w-full object-contain object-center before:absolute before:inset-0 before:h-full before:w-full before:bg-black before:opacity-20 before:content-[''] xl:w-[60%]"
+            className="h-full w-full object-contain object-center opacity-70 xl:w-[60%]"
           />
           <div>
             <h1 className="mb-4 text-xl font-bold !leading-tight text-black sm:text-3xl dark:text-white">
               Kendimize Güveniyoruz
             </h1>
-            <ul className="[&_li]:text-md:lg mt-5 [&_b]:text-white [&_li]:pt-10 [&_li]:text-base [&_li]:!leading-relaxed [&_li]:text-body-color">
-              <li>
-                <b className="text-white"> Mükemmeliyet:</b> Tasarım ve üretimde
-                mükemmeliyeti hedefliyoruz. Projelerinizde kalite ve
-                güvenilirliği bir arada bulacaksınız.
+            <ul className="[&_li]:text-md:lg mt-5 text-stroke-dark [&_b]:dark:text-white [&_li]:pt-10 [&_li]:text-base [&_li]:!leading-relaxed [&_li]:text-body-color">
+              <li className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                <b> Mükemmeliyet:</b> Tasarım ve üretimde mükemmeliyeti
+                hedefliyoruz. Projelerinizde kalite ve güvenilirliği bir arada
+                bulacaksınız.
               </li>
-              <li>
+              <li className="text-base !leading-relaxed text-black dark:text-body-color-dark">
                 <b>Hızlı Çözümler:</b> Zamanın öneminin farkındayız. Hızlı ve
                 etkili çözümlerle projelerinizi zamana uygun bir şekilde teslim
                 ediyoruz.

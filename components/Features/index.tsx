@@ -6,16 +6,10 @@ import expert from "../../public/images/icons/expert.png";
 import soluiton from "../../public/images/icons/solution.png";
 import quality from "../../public/images/icons/quality.png";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import "swiper/css";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const Features = () => {
   return (
@@ -25,7 +19,7 @@ const Features = () => {
           <h1 className="my-5 border-b border-primary pb-2 text-center text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
             Neden Biz?
           </h1>
-          <div className="mb-12 text-center text-base !leading-relaxed text-black sm:text-lg md:text-xl dark:text-body-color-dark">
+          <div className="mb-12 text-center text-base !leading-relaxed text-body-color-dark sm:text-lg md:text-xl">
             Firmamız, 1600 metrekarelik bir alanda hizmet vermektedir ve ISO
             9001:2008 Kalite Standartları belgesine sahiptir. Yaklaşık 70 uzman
             personelimizle sizlere en kaliteli hizmeti sunmak için çalışıyoruz.
@@ -42,8 +36,9 @@ const Features = () => {
               />
               <div className="space-y-2">
                 <h1 className="text-2xl font-medium">Uzman Kadro</h1>
-                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
-                  ISO 9001:2008 belgesi ile kalitemizi kanıtlıyoruz.
+                <p className="text-base !leading-relaxed text-body-color-dark">
+                  Deneyimli ve uzman bir ekip ile projelerinizi hayata
+                  geçiriyoruz.
                 </p>
               </div>
             </div>
@@ -55,7 +50,7 @@ const Features = () => {
               />
               <div className="space-y-2">
                 <h1 className="text-2xl font-medium">Çözüm Odaklı Yaklaşım</h1>
-                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                <p className="text-base !leading-relaxed text-body-color-dark">
                   Tasarımdan üretime kadar kapsamlı çözümler sunuyoruz.
                 </p>
               </div>
@@ -68,7 +63,7 @@ const Features = () => {
               />
               <div className="space-y-2">
                 <h1 className="text-2xl font-medium">Kalite Standartları</h1>
-                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                <p className="text-base !leading-relaxed text-body-color-dark">
                   ISO 9001:2008 belgesi ile kalitemizi kanıtlıyoruz.
                 </p>
               </div>
@@ -83,7 +78,7 @@ const Features = () => {
                 <h1 className="text-2xl font-medium">
                   Hızlı ve Güvenilir Üretim
                 </h1>
-                <p className="text-base !leading-relaxed text-black dark:text-body-color-dark">
+                <p className="text-base !leading-relaxed text-body-color-dark">
                   Standartlara uygun malzemelerle hızlı ve güvenilir PCB üretimi
                   yapıyoruz.
                 </p>
