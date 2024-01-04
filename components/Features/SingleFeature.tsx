@@ -6,7 +6,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph, img } = feature;
   return (
     <div className="relative flex min-h-[600px] w-full flex-col justify-center pb-28 lg:min-h-[750px]">
-      <div>
+      <div className="fixed left-0 top-0 -z-10 h-full w-full before:absolute before:inset-0 before:h-full before:w-full before:bg-black before:opacity-80 before:content-['']">
         <Image
           src={img}
           alt="Slayt Görsel"

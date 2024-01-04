@@ -93,7 +93,6 @@ const Features = () => {
           modules={[Pagination, Autoplay]}
           slidesPerView={1}
           speed={1300}
-          loop={true}
           direction="horizontal"
           autoplay={{
             delay: 2000,
