@@ -96,7 +96,8 @@ const Features = () => {
           slidesPerView={1}
           speed={1300}
           loop={true}
-          style={{ direction: "rtl" }}
+          direction="horizontal"
+          lazyPreloadPrevNext={1}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
