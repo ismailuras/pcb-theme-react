@@ -4,4 +4,6 @@ export type Feature = {
   img: any;
   title: string;
   paragraph: string;
+  sub_desc?: any;
+  link?: string;
 };

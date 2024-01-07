@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph, img } = feature;
+  const { icon, title, paragraph, img, sub_desc, link } = feature;
   return (
-    <div className="relative flex min-h-[600px] w-full flex-col justify-center pb-28 lg:min-h-[750px]">
+    <div className="relative flex min-h-[600px] w-full flex-col justify-center pb-28 lg:min-h-[800px]">
       <div className="absolute left-0 top-0 -z-10 h-full w-full before:absolute before:inset-0 before:h-full before:w-full before:bg-black before:opacity-80 before:content-['']">
         <Image
           src={img}
@@ -25,9 +25,21 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <p className="text-lg font-medium leading-relaxed text-white">
           {paragraph}
         </p>
+        {sub_desc &&
+          sub_desc.map((sub: any, i: number) => (
+            <div key={i} className="mt-4">
+              <h4 className="mb-2 font-medium">{sub.title}</h4>
+              <ol className="list-disc space-y-2">
+                <li>{sub.text}</li>
+                <li>{sub.text2}</li>
+                <li>{sub.text3}</li>
+                <li>{sub.text4}</li>
+              </ol>
+            </div>
+          ))}
         <div className="mr-20 mt-8 flex items-center justify-center sm:justify-end">
           <Link
-            href="/services"
+            href={`/services/${link}`}
             className="group relative inline-flex items-center justify-start overflow-hidden rounded-sm bg-primary px-5 py-2 font-medium transition-all sm:px-8 sm:py-4"
           >
             <span className="absolute bottom-0 left-0 mb-12 ml-9 h-48 w-48 -translate-x-full translate-y-full rotate-[-40deg] rounded bg-emerald-700 transition-all duration-500 ease-out group-hover:mb-32 group-hover:ml-0 group-hover:translate-x-0"></span>

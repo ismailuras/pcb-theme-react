@@ -40,6 +40,7 @@ const featuresData: Feature[] = [
     img: arge,
     paragraph:
       "Firmamız PCB TASARIM olarak, uzun yıllara dayanan tasarım ve AR-GE deneyimimizle, bir tasarımın gerçekleştirilmesi veya tasarımdan üretime kadar kapsamlı bir çözüm sunmaktayız.",
+    link: "#arge",
   },
   {
     id: 2,
@@ -115,6 +116,7 @@ const featuresData: Feature[] = [
     img: manufacture,
     paragraph:
       "Standartlara uygun, onaylı malzemelerle birlikte, tek taraftan 30 katlıya kadar olan PCB prototip ve seri üretim taleplerinizi en iyi şekilde karşılıyoruz.",
+    link: "#pcb_manufacture",
   },
   {
     id: 3,
@@ -171,7 +173,18 @@ const featuresData: Feature[] = [
     title: "PCB DİZGİ",
     img: component,
     paragraph:
-      "Firmamız, 1600 metrekarelik bir alanda hizmet veren ve ISO 9001:2008 Kalite Standartları belgesine sahip bir kuruluştur. Yaklaşık 70 çalışanımız ile kaliteli hizmet sunmaktayız.",
+      "PCB Tasarım olarak her türlü elektronik kartın SMD dizgisini ve lehimlemesini kaliteli ve hızlı bir şekilde gerçekleştiriyoruz.",
+    link: "#pcb_composition",
+    sub_desc: [
+      {
+        title: "Baskı Devre Kart Dizgisi",
+        text: "Bacaklı malzemelerin otomatik hatlarda seri ve hatasız dizgisi (Jumper-wire, aksiyel ve radyal)",
+        text2:
+          "SMD Malzemelerin Dizgisi (1005 (0402) malzemelerden 0.3mm hassas entegreler, konnektörler ve BGA malzemeler)",
+        text3: "Karışık Teknolojiler (bacaklı eleman + SMD / çift taraflı SMD)",
+        text4: "Manuel Dizgi",
+      },
+    ],
   },
 ];
 export default featuresData;

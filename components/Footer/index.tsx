@@ -126,78 +126,42 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            {/* 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      TOS
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Refund Policy
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
 
-            {/* <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
+                  Adres & İletişim
                 </h2>
-                <ul>
+                <ul className="space-y-3">
+                  <li className="mb-3">
+                    <address>
+                      Muallimköy Mahallesi Deniz Caddesi No : 143/5/59 Gebze
+                      Kocaeli
+                    </address>
+                  </li>
                   <li>
                     <a
-                      href="/contact"
+                      href="telto:08508887348"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Open Support Ticket
+                      Telefon: 0 850 888 73 48
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="mailto:info@pcbtasarimi.com "
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Terms of Use
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
+                      E-posta: info@pcbtasarimi.com
                     </a>
                   </li>
                 </ul>
               </div>
-            </div> */}
+            </div>
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
+          <div className="hidden py-8">
             <p className="text-center text-base text-body-color dark:text-white">
               Şirket adı{" "}
               <a href="https://nextjstemplates.com" rel="nofollow noopener">

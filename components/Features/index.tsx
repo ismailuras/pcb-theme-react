@@ -96,7 +96,7 @@ const Features = () => {
           loop={true}
           direction="horizontal"
           autoplay={{
-            delay: 2000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
