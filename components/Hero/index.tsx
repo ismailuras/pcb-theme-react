@@ -26,8 +26,8 @@ const Hero = () => {
         >
           {heroData.map((hero) => (
             <SwiperSlide key={hero.id}>
-              <div className="relative flex min-h-[800px] w-full flex-col justify-end lg:min-h-[850px]">
-                <div className="self-center px-5 pb-40">
+              <div className="relative flex min-h-[800px] w-full flex-col justify-start lg:min-h-[850px]">
+                <div className="self-center px-5 pt-40">
                   <h2 className="text-center text-4xl font-medium text-white">
                     {hero.title}
                   </h2>
