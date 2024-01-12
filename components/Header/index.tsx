@@ -52,17 +52,11 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
+                className={`header-logo block w-full text-3xl font-medium text-gray-800 transition-colors duration-300 hover:text-blue-500 dark:text-white ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="block w-full"
-                />
+                PCB Tasarım
               </Link>
             </div>
             <div>

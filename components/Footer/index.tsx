@@ -10,24 +10,14 @@ const Footer = () => {
         data-wow-delay=".1s"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+          <div className="-mx-4 flex flex-wrap justify-center">
+            {/* <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <Image
-                    src="/images/logo/logo-2.svg"
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  />
-                  <Image
-                    src="/images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
+                <Link
+                  href="/"
+                  className="header-logo block w-full py-5 text-3xl font-medium text-gray-800 transition-colors duration-300 hover:text-blue-500 lg:py-2 dark:text-white "
+                >
+                  PCB Tasarım
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Sosyal medya kanalları üzerinden bizi takip edebilirsiniz.
@@ -91,7 +81,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
@@ -134,7 +124,7 @@ const Footer = () => {
                 </h2>
                 <ul className="space-y-3">
                   <li className="mb-3">
-                    <address>
+                    <address className="inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary">
                       Muallimköy Mahallesi Deniz Caddesi No : 143/5/59 Gebze
                       Kocaeli
                     </address>
@@ -142,7 +132,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="telto:08508887348"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Telefon: 0 850 888 73 48
                     </a>
@@ -150,7 +140,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="mailto:info@pcbtasarimi.com "
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       E-posta: info@pcbtasarimi.com
                     </a>

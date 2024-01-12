@@ -12,7 +12,7 @@ const ErrorPage = () => {
   return (
     <>
       <section className="relative z-10 pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
-        <div className="container">
+        {/* <div className="container">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[530px] text-center">
@@ -529,7 +529,7 @@ const ErrorPage = () => {
               </linearGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
       </section>
     </>
   );
