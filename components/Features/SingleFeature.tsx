@@ -1,13 +1,13 @@
 import { Feature } from "@/types/feature";
-import Image from "next/image";
 import Link from "next/link";
 
+/* eslint-disable @next/next/no-img-element */
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph, img, sub_desc, link } = feature;
   return (
     <div className="relative flex min-h-[600px] w-full flex-col justify-center pb-28 lg:min-h-[800px]">
       <div className="absolute left-0 top-0 -z-10 h-full w-full before:absolute before:inset-0 before:h-full before:w-full before:bg-black before:opacity-80 before:content-['']">
-        <Image
+        <img
           src={img}
           alt="Slayt Görsel"
           className="h-full w-full object-cover object-center"

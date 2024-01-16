@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
 const checkIcon = (
@@ -7,6 +6,7 @@ const checkIcon = (
   </svg>
 );
 
+/* eslint-disable @next/next/no-img-element */
 const AboutSectionOne = () => {
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
@@ -50,10 +50,9 @@ const AboutSectionOne = () => {
 
             <div className="hidden w-full px-4 lg:block lg:w-1/2 xl:block">
               <div className="wow fadeInUp relative mx-auto aspect-[25/24] lg:mr-0">
-                <Image
+                <img
                   src="/images/about/about-hero.jpg"
                   alt="about-image"
-                  fill
                   className="h-full w-full object-contain object-center dark:opacity-70"
                 />
               </div>

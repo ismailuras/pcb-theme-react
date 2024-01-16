@@ -2,9 +2,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { heroData } from "./heroData";
-import Image from "next/image";
 import "swiper/css";
 
+/* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
     <>
@@ -36,10 +36,10 @@ const Hero = () => {
                   </p>
                 </div>
                 <div className="absolute left-0 top-0 -z-10 h-full w-full">
-                  <Image
+                  <img
                     src={hero.img}
                     alt="Ana Sayfa Slider"
-                    className="w-ful h-full object-cover object-center opacity-100 dark:opacity-60"
+                    className="h-full w-full object-cover object-center opacity-100 dark:opacity-60"
                   />
                 </div>
               </div>

@@ -1,13 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-import img from "../../public/images/ready-to-help/ready-to-help.jpg";
 
+/* eslint-disable @next/next/no-img-element */
 const ReadyToHelp = () => {
-  const [isOpen, setOpen] = useState(false);
-
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -18,8 +14,8 @@ const ReadyToHelp = () => {
         />
 
         <div className="z-11 flex flex-col gap-10 xl:flex-row xl:items-center xl:justify-between">
-          <Image
-            src={img}
+          <img
+            src="/images/ready-to-help/ready-to-help.jpg"
             alt="Yardıma Hazırız"
             className="h-full w-full object-contain object-center xl:w-[60%] dark:opacity-70"
           />

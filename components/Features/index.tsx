@@ -1,15 +1,12 @@
 "use client";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
-import safety from "../../public/images/icons/safety.png";
-import expert from "../../public/images/icons/expert.png";
-import soluiton from "../../public/images/icons/solution.png";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 
+/* eslint-disable @next/next/no-img-element */
 const Features = () => {
   return (
     <>
@@ -20,8 +17,8 @@ const Features = () => {
           </h1>
           <div className="flex flex-wrap items-center justify-between gap-8 py-10">
             <div className="h-full w-full space-y-7 rounded-sm p-4 md:h-60 md:w-80">
-              <Image
-                src={expert}
+              <img
+                src="/images/icons/expert.png"
                 alt="Uzman Kadro"
                 className="rounded-full bg-white object-cover object-center p-1"
               />
@@ -34,8 +31,8 @@ const Features = () => {
               </div>
             </div>
             <div className="h-full w-full space-y-7 rounded-sm p-4 md:h-60 md:w-80">
-              <Image
-                src={soluiton}
+              <img
+                src="/images/icons/solution.png"
                 alt="Çözüm Odaklı"
                 className="rounded-full bg-white object-cover object-center p-1"
               />
@@ -47,8 +44,8 @@ const Features = () => {
               </div>
             </div>
             <div className="h-full w-full space-y-7 rounded-sm p-4 md:h-60 md:w-80">
-              <Image
-                src={safety}
+              <img
+                src="/images/icons/safety.png"
                 alt="Hızlı ve Güvenli"
                 className="h-[60px] w-[60px] rounded-full bg-white p-2"
               />

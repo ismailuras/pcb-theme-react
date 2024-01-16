@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,6 +6,7 @@ export const metadata: Metadata = {
   description: "PCB Tasarım Hizmetlerimiz Sayfası",
 };
 
+/* eslint-disable @next/next/no-img-element */
 function Services() {
   return (
     <>
@@ -41,10 +41,9 @@ function Services() {
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] dark:opacity-70">
-                      <Image
-                        src="/images/services/arge.jpg"
+                      <img
+                        src="images/services/arge.jpg"
                         alt="PCB Ar-ge Süreci"
-                        fill
                         className="object-cover object-center"
                       />
                     </div>
@@ -107,10 +106,9 @@ function Services() {
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] dark:opacity-70">
-                      <Image
+                      <img
                         src="/images/services/pcb-manufacture.jpg"
                         alt="PCB Üretim Aşamaları"
-                        fill
                         className="object-cover object-center"
                       />
                     </div>
@@ -184,10 +182,9 @@ function Services() {
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] dark:opacity-70">
-                      <Image
+                      <img
                         src="/images/services/pcb-composition.jpg"
                         alt="PCB Üretim Aşamaları"
-                        fill
                         className="object-cover object-center"
                       />
                     </div>

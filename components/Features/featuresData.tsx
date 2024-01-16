@@ -1,8 +1,4 @@
 import { Feature } from "@/types/feature";
-import arge from "/public/images/swiper/arge.jpg";
-import manufacture from "/public/images/swiper/manufacture.jpg";
-// import test from "/public/images/swiper/test.jpg";
-import component from "/public/images/swiper/component.jpg";
 
 const featuresData: Feature[] = [
   {
@@ -37,7 +33,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "AR-GE",
-    img: arge,
+    img: "/images/swiper/arge.jpg",
     paragraph:
       "Firmamız PCB TASARIM olarak, uzun yıllara dayanan tasarım ve AR-GE deneyimimizle, bir tasarımın gerçekleştirilmesi veya tasarımdan üretime kadar kapsamlı bir çözüm sunmaktayız.",
     link: "#arge",
@@ -113,7 +109,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "PCB ÜRETİM",
-    img: manufacture,
+    img: "/images/swiper/manufacture.jpg",
     paragraph:
       "Standartlara uygun, onaylı malzemelerle birlikte, tek taraftan 30 katlıya kadar olan PCB prototip ve seri üretim taleplerinizi en iyi şekilde karşılıyoruz.",
     link: "#pcb_manufacture",
@@ -171,7 +167,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "PCB DİZGİ",
-    img: component,
+    img: "/images/swiper/component.jpg",
     paragraph:
       "PCB Tasarım olarak her türlü elektronik kartın SMD dizgisini ve lehimlemesini kaliteli ve hızlı bir şekilde gerçekleştiriyoruz.",
     link: "#pcb_composition",
