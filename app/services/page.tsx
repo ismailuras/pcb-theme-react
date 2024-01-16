@@ -42,7 +42,7 @@ function Services() {
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] dark:opacity-70">
                       <img
-                        src="images/services/arge.jpg"
+                        src="/images/services/arge.jpg"
                         alt="PCB Ar-ge Süreci"
                         className="object-cover object-center"
                       />
