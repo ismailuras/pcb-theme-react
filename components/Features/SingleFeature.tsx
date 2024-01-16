@@ -5,7 +5,7 @@ import Link from "next/link";
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph, img, sub_desc, link } = feature;
   return (
-    <div className="relative flex min-h-[600px] w-full flex-col justify-center pb-28 lg:min-h-[800px]">
+    <div className="relative flex h-[700px] w-full flex-col justify-center pb-28 lg:min-h-[800px]">
       <div className="absolute left-0 top-0 -z-10 h-full w-full before:absolute before:inset-0 before:h-full before:w-full before:bg-black before:opacity-80 before:content-['']">
         <img
           src={img}
@@ -13,7 +13,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           className="h-full w-full object-cover object-center"
         />
       </div>
-      <div className="ml-1 mt-72 w-full px-2 sm:px-5 md:px-20 lg:mt-56 xl:w-2/4">
+      <div className="ml-1 mt-72 w-full px-7 pb-32 sm:px-5 sm:pb-0 md:px-20 lg:mt-56 xl:w-2/4">
         <div className="flex items-center justify-between gap-5">
           <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
             {icon}
