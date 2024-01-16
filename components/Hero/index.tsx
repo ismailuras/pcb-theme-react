@@ -19,7 +19,7 @@ const Hero = () => {
           loop={true}
           direction="horizontal"
           autoplay={{
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
